@@ -16,6 +16,9 @@ public class VariableLearning {
         float myFloatNumber = 2.1F;
         double myDoubleNumber = 3.1D;
         long myLongNumber = 123456L;
+        boolean myBVar = true;
+        myBVar = false;
+        char c ='d';
 
     }
 }
