@@ -12,6 +12,7 @@ public class Lab21_BMICalculator {
         float height = sc.nextFloat();
 //        I use float because double is too much to use to calculate human height
         float BMI = weight / (height * height);
-        System.out.print("\nThe Body Mass Index (BMI) is " + BMI + " kg/m2");
+//        BMI = weight / square of height
+        System.out.print("\nYour Body Mass Index (BMI) is " + BMI + " kg/m2");
     }
 }
