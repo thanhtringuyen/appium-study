@@ -7,15 +7,15 @@ public class AnimalsRacing {
         Animal dog = new Dog();
         Animal horse = new Horse();
         Animal tiger = new Tiger();
-        Animal dragon = new Lion();
-        Animal leopard = new Cheetah();
+        Animal lion = new Lion();
+        Animal cheetah = new Cheetah();
         ArrayList<Animal> animalsList = new ArrayList<Animal>();
 
         animalsList.add(horse);
         animalsList.add(tiger);
         animalsList.add(dog);
-        animalsList.add(dragon);
-        animalsList.add(leopard);
+        animalsList.add(lion);
+        animalsList.add(cheetah);
         AnimalsRacing(animalsList);
     }
 
