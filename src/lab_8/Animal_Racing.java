@@ -10,9 +10,8 @@ public class Animal_Racing {
         ArrayList<AnimalBuilder> racingAnimals = new ArrayList<>();
         racingAnimals.add(winner);
         for (int i=1; i<animalList.size(); i++) {
-            if (animalList.get(i).withWings()) {
-                animalList.remove(i);
-            }
+            if (animalList.get(i).withWings())
+                continue;
             if (animalList.get(i).getSpeed() > winner.getSpeed()) {
                 winner = animalList.get(i);
                 racingAnimals.clear();
