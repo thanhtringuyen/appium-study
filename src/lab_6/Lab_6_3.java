@@ -8,7 +8,7 @@ public class Lab_6_3 {
         {
             if (Character.isDigit(character))
             {
-                System.out.print(character);
+                outputStr += character;
             }
         }
         System.out.println(outputStr);
