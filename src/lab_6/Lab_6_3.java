@@ -1,16 +1,16 @@
-package lab_6;
+package Lab_6;
 
 public class Lab_6_3 {
     public static void main(String[] args) {
-        String myStr = "100 minutes 234 seconds";
-
-        for (char digit : myStr.toCharArray())
+        String inputStr = "100 minutes 234 seconds";
+        String outputStr = "";
+        for (char character : inputStr.toCharArray())
         {
-            if (Character.isDigit(digit))
+            if (Character.isDigit(character))
             {
-                System.out.print(digit);
+                System.out.print(character);
             }
         }
-
+        System.out.println(outputStr);
     }
 }
