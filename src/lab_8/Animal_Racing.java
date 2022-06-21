@@ -47,9 +47,9 @@ public class Animal_Racing {
                 .withWings(true).build();
         Animal falcon = new Animal.Builder().withName("Falcon").withSpeed(new SecureRandom().nextInt(91))
                 .withWings(true).build();
-        Animal tiger = new Animal.Builder().withName("Tiger").withSpeed(new SecureRandom().nextInt(1))
+        Animal tiger = new Animal.Builder().withName("Tiger").withSpeed(new SecureRandom().nextInt(101))
                 .withWings(false).build();
-        Animal snake = new Animal.Builder().withName("Snake").withSpeed(new SecureRandom().nextInt(1))
+        Animal snake = new Animal.Builder().withName("Snake").withSpeed(new SecureRandom().nextInt(61))
                 .withWings(false).build();
         Animal pikachu = new Animal.Builder().withName("Pikachu").withSpeed(new SecureRandom().nextInt(101))
                 .withWings(false).build();
