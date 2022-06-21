@@ -22,7 +22,7 @@ public class Animal_Racing {
             if(racingAnimals.get(0).getName().equals("winner"))
                 System.out.println("All animals can fly, so we can not see which is the winner");
             else
-                System.out.printf("The winner is %s with amazing speed at: %s km/h", racingAnimals.get(0).getName(), racingAnimals.get(0).getSpeed());
+                System.out.println("The winner is %s with amazing speed at: %s km/h", racingAnimals.get(0).getName(), racingAnimals.get(0).getSpeed());
             return;
         }
     }
