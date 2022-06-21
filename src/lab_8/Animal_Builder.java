@@ -1,14 +1,14 @@
 package lab_8;
 
-public class Animal_Builder {
+public class Animal {
     private String name;
     private int speed;
     private boolean flyable;
 
-    public Animal_Builder() {
+    public Animal() {
     }
 
-    public Animal_Builder(Builder animalBuilder){
+    public Animal(Builder animalBuilder){
         name = animalBuilder.name;
         speed = animalBuilder.speed;
         flyable = animalBuilder.flyable;
@@ -31,11 +31,10 @@ public class Animal_Builder {
         private int speed;
         private boolean flyable;
 
-        public Builder withAnimalType(String name){
+        public Builder withName(String name){
             this.name = name;
             return this;
         }
-
         public Builder withSpeed(int speed){
             this.speed = speed;
             return this;
@@ -45,8 +44,8 @@ public class Animal_Builder {
             this.flyable = flyable;
             return this;
         }
-        public Animal_Builder animalbuilder(){
-            return new Animal_Builder(this);
+        public Animal build(){
+            return new Animal(this);
         }
     }
 }
