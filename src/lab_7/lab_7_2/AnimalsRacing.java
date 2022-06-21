@@ -21,19 +21,19 @@ public class AnimalsRacing {
 
     public static void AnimalsRacing(ArrayList<Animal> animalList){
         Animal winner =  animalList.get(0);
-        ArrayList<Animal> reWinner = new ArrayList<>();
-        reWinner.add(winner);
+        ArrayList<Animal> winner = new ArrayList<>();
+        winner.add(winner);
 
         for (int i=1; i<animalList.size();i++) {
             if (animalList.get(i).speed() > winner.speed()) {
                 winner = animalList.get(i);
-                reWinner.clear();
-                reWinner.add(winner);
+                winner.clear();
+                winner.add(winner);
             }
         }
-        if (reWinner.size()>1)
-            System.out.printf("there are %d winners:", reWinner.size());
-        for (Animal i: reWinner){
+        if (winner.size()>1)
+            System.out.printf("there are %d winners:", winner.size());
+        for (Animal i: winner){
             System.out.printf("The winner is <%s> with amazing speed at: <%s>\n" , i.getAnimalType(),  i.getSpeed() + " km/h");
         }
 
